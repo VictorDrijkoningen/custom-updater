@@ -1,0 +1,9 @@
+[Unit]
+Description=Custom Updater Timer
+
+[Timer]
+OnUnitActiveSec=120s
+OnBootSec=30s
+
+[Install]
+WantedBy=timers.target
