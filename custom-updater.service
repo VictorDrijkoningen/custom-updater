@@ -1,0 +1,10 @@
+[Unit]
+Description=Custom Update Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/bin/bash -c 'sleep 120; bash /home/steam/checkidleandupdate.sh'
+
+[Install]
+WantedBy=default.target
